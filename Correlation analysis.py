@@ -9,8 +9,8 @@ sns.set()  # более красивый внешний вид графиков 
 df = pd.read_csv('2019.csv', sep=',')
 
 # df.info()
-print(df.head())
-print(df.describe())
+# print(df.head())
+# print(df.describe())
 
 for x in df.columns[3:]:
     sns.jointplot(x=x, y='Score', data=df)
